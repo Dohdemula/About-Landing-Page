@@ -1,0 +1,177 @@
+/* Section Containers */
+.about-story-section,
+.about-mission-section,
+.core-values-section,
+.team-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem 0 1rem;
+}
+
+/* Section Titles */
+.core-values-title,
+.team-title,
+.footer-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #222;
+}
+
+/* Flex and Grid Layouts */
+.about-story-section,
+.about-mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Text Blocks */
+.about-story-text,
+.about-mission-text {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.about-story-text h2,
+.about-mission-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-story-text p,
+.about-mission-text p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Images */
+.about-story-image,
+.about-mission-image {
+  flex: 1;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Core Values */
+.core-values-section {
+  background-color: #f0f0f0;
+  max-width: 100%;
+}
+.core-value-item {
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.core-value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.core-value-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.core-value-desc {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Team Section */
+.team-member {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-member-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member-name {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.team-member-role {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.team-member-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Social Icons (Navbar, Team, Footer) */
+.navbar-btn,
+.team-social-icon,
+.footer-social-icon {
+  background-color: #8201d8;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-btn:hover,
+.team-social-icon:hover,
+.footer-social-icon:hover {
+  color: #7100bd;
+}
+
+/* Footer */
+.footer-section {
+  background: #f0f0f0;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  color: #888;
+} 
