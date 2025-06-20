@@ -12,11 +12,15 @@ const Hero = () => {
         backgroundPosition: "center"
       }}
     >
+      <div className="hero-overlay" />
       <div className="hero-content">
         <h1 className="hero-headline">About Our Company</h1>
         <p className="hero-subheadline">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+        <div className="hero-btn-wrapper">
+          <button className="navbar-btn">Get Started</button>
+        </div>
       </div>
     </section>
   );

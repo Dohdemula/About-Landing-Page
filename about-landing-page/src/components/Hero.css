@@ -5,12 +5,25 @@
   align-items: center;
   justify-content: center;
   /* background: url('/images/aboutpg.jpg') center center/cover no-repeat; */
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-content {
   text-align: center;
   padding: 2rem 3rem;
-  
+  max-width: 80rem;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-headline {
@@ -24,4 +37,10 @@
   font-size: 1.25rem;
   color: #fff;
   margin: 0;
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 } 
