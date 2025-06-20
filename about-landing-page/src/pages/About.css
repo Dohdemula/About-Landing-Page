@@ -283,3 +283,54 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 600px) {
+  .core-values-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-story-section,
+  .about-mission-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .about-mission-section {
+    flex-direction: column-reverse;
+  }
+  .about-story-image,
+  .about-mission-image {
+    height: 220px;
+  }
+  .team-member {
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+  }
+  .team-desc {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  .core-value-item {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .core-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-story-image,
+  .about-mission-image {
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .about-mission-section {
+    flex-direction: column-reverse;
+  }
+}
+

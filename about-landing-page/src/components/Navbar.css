@@ -6,6 +6,7 @@
   padding: 20px 2rem;
   height: 64px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  position: relative;
 }
 
 .navbar-logo {
@@ -44,6 +45,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
+  margin-left: 1rem;
 }
 
 .navbar-btn:hover {
@@ -54,4 +56,139 @@
   display: flex;
   align-items: center;
   flex: 1;
+}
+
+/* Hamburger styles */
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+  margin-left: 1rem;
+}
+.hamburger-bar {
+  width: 26px;
+  height: 3px;
+  background: #222;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile menu */
+.navbar-links-mobile {
+  display: none;
+  position: absolute;
+  top: 64px;
+  right: 1rem;
+  left: unset;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1rem 0.5rem;
+  z-index: 1001;
+  border: 1px solid #eee;
+  animation: dropdownIn 0.2s;
+}
+
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar-links-mobile.open {
+  display: flex;
+}
+
+.navbar-links-mobile li {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+.navbar-links-mobile li a {
+  font-size: 1.1rem;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none !important;
+}
+
+.navbar-links-mobile li a:hover {
+  background: #f3f4f6;
+  text-decoration: none;
+  color: #8201d8;
+}
+
+@media (max-width: 900px) {
+  .core-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .core-values-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-story-section,
+  .about-mission-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .about-story-image,
+  .about-mission-image {
+    height: 220px;
+  }
+  .team-member {
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+  }
+  .team-desc {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-hamburger {
+    display: flex;
+  }
+  .navbar-content {
+    flex: 1;
+    justify-content: flex-start;
+  }
+  .navbar-btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    margin-left: 0.5rem;
+  }
+  .navbar-hamburger {
+    margin-left: 0.5rem;
+  }
+  .navbar {
+    padding: 16px 1rem;
+    height: 56px;
+  }
+  .navbar-logo {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
 } 

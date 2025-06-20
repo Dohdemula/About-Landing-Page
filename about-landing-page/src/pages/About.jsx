@@ -16,16 +16,16 @@ const About = () => {
           </p>
           <div className="about-story-headings">
             <div className="about-story-stat">
-              <h3>12+</h3>
-              <p>Years of Experience</p>
+          <h3>12+</h3>
+          <p>Years of Experience</p>
             </div>
             <div className="about-story-stat">
-              <h3>500+</h3>
-              <p>Happy Clients</p>
+          <h3>500+</h3>
+          <p>Happy Clients</p>
             </div>
             <div className="about-story-stat">
-              <h3>50+</h3>
-              <p>Team Members</p>
+          <h3>50+</h3>
+          <p>Team Members</p>
             </div>
           </div>
         </div>
